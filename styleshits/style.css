@@ -1,0 +1,77 @@
+body {
+    background-color: #FFF;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.main-navigator-bar {
+  	content: "";
+  	border-top: solid 0.2em #1B3E5F;
+  	display: block;
+  	background-color: #F1F1F1;
+  	height: 4em;
+ 	width:100%;
+  	position: relative
+}
+.main-navigator-bar ul {
+	position: absolute;
+  	right: 0
+}
+.main-navigator-bar li {
+  	display: inline-block
+}
+.main-navigator-bar li a {
+  	padding: 0.5em 1em;
+  	text-decoration: none;
+  	color: #245380
+}
+.login-panel { /* class é mais OO */
+	margin: 1em auto; /* centralizando */
+  	display: table; /* Para não pegar o tamanho todo do elemento pai */
+    border-radius: 1em; /* sempre EM, a cada PX um bebê foca morre */
+  	border: solid .1em #DFDFDF;
+  	padding: 1em;
+  	width:30%
+}
+.login-panel input, .login-panel label {
+	display: block;
+  	width:96%
+}
+.login-panel input { 
+  	border: solid .1em #DFDFDF;
+	padding: 2%;
+  	color: #DFDFDF;
+  	font-size: 1em
+}
+.login-panel label {
+	color: #CCC
+}
+.login-panel input[type="submit"] {
+	background-color: #48A6FF;
+  	color: #FFF
+}
+.header {
+	font-size: 1.2em;
+  	color: #122A40;
+  	border-bottom: 0.1em solid #DFDFDF;
+  	padding-bottom: .4em
+}
+p{
+  color: black;
+}
+.verde{
+  color:gray;
+}
+
+p.verde.azul {
+  color:black
+}
+p.verde{
+  color: green;
+}
+p.azul{
+  color:blue;
+}
+p.vermelho{
+  color:red;
+}

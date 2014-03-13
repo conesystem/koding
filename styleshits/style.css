@@ -43,6 +43,52 @@ body {
   	color: #DFDFDF;
   	font-size: 1em
 }
+.login-panel p {
+	position: relative
+}
+.login-panel .hint {
+	display: none;
+  	position: absolute;
+  	left: 100%;
+  	margin-top: -2.5em;
+  	margin-left: 1em;  
+    border-radius: 0.2em;
+  	color: #FFF;
+  	background-color:#6EC7CF;
+  	padding: 1em;
+}
+.login-panel input:focus ~ label.hint { 
+	display: block;
+}
+.login-panel input:focus ~ label.hint:before { 
+  	width: 0px;
+  	display:block;
+  	height:0px;
+	content: "";
+  	border: 15px solid transparent;
+	border-right: 15px solid #6EC7CF;
+  	position: absolute;
+  	left: -1.9em;
+  	margin-top: -0.4em
+}
+.login-panel input:focus {
+  	border: solid 1px #48A6FF
+}
+.login-panel input::-webkit-input-placeholder {
+   color: #DFDFDF
+}
+
+.login-panel input:-moz-placeholder { /* Firefox 18- */
+   color: #DFDFDF
+}
+
+.login-panel input::-moz-placeholder {  /* Firefox 19+ */
+   color: #DFDFDF  
+}
+
+.login-panel input:-ms-input-placeholder {  
+   color: #DFDFDF
+}
 .login-panel label {
 	color: #CCC
 }
